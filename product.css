@@ -1,0 +1,277 @@
+html{
+			overflow-x: hidden;
+			background-color: #f5f5f5; 
+		}
+		.lo{
+			margin-top: -50px;
+			position: absolute; 
+			padding-left: 2.5%;
+			cursor: pointer;
+		}
+		*{
+			margin: 0px;
+		}
+		body{
+			margin: 0px;
+			font-family: 'Poppins', sans-serif;
+		}
+		nav{
+			background-image: linear-gradient(to right,#4c96d7 20%,#bbff9c);
+			height: 100px;
+			box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+		}
+		aside{
+			background-color: black;
+			width:20%; 
+			height: 100vh;
+			color: white;
+			padding: 2% 0.5%;
+			text-align: center;
+			position: fixed;
+		}
+		li:hover, li:active{
+			padding-left: 8%;
+			transition: 0.3s;
+		}
+		h2{
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+		ul{
+			text-align: left;
+			cursor: pointer;
+			padding-left: 5%;
+			list-style: none;
+			line-height: 5.0em;
+			letter-spacing: 2px;
+		}
+		.main{
+			position: relative;
+			margin-left: 21%;
+			width: 100%;
+		}
+		.navbut{
+			float: right;
+			background-color: transparent;
+			margin: 40px 20px 0px;
+			color: black;
+			font-size: 20px;
+		}
+		.navbut:hover{
+			color:#4c96d7;
+			border-bottom: 1px #4c96d7;
+		}
+		button{
+			outline: none;
+			cursor: pointer;
+			border: none;
+		}
+		a{
+			cursor: pointer;
+			text-decoration: none;
+		}
+		.propage{
+			display:flex;
+			padding:2% 2% 0px 2%;
+			margin: 0px 8%;
+		}
+		.firstflex{
+			width: 65%;
+			background-color: white;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+		.bi{
+			width: 250px;
+			box-shadow:  1px 2px 10px #bbff9c;
+			margin:10px auto;
+			display: block;  
+		}
+		.secondflex{
+			margin:0px 2%;
+			width: 30%;
+		}
+		.desc{
+			background-color: white;
+			width: 60%;
+			padding: 2.5%;
+			border: 1px solid rgba(0,0,0,0.3);
+			line-height: 2em;
+		}
+		.bnbp , .sn {
+			border: 1px solid rgba(0,0,0,0.3);
+			padding: 20px;
+			line-height: 2em;
+			margin-bottom: 10px;
+			background-color: white;
+		}
+		#bn, #ba, #bd, #bcat{
+			font-size: 18px;
+		}
+		#bcon{
+			font-size: 14px;
+		}
+		#bp{
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		#bcon{
+			float: right;
+		}
+		.cartbutton{
+			float:right;
+			font-size: 25px;
+			background-color: white;
+		}
+		.samebooks{
+			height: 330px;
+			width: 20%;
+			padding: 20px;
+			text-align: center;
+		}
+		.sbi{
+			height: 280px; 
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+		}
+	.related{
+			background-color: white;
+			padding:1%;
+			margin: 3% 10%;
+			border: 1px solid rgba(0,0,0,0.2);
+	}
+	.bl{
+		display: flex;
+	}
+	.samebooks:hover{
+		box-shadow: 1px 1px 3px #4c96d7,-1px -1px 5px #bbff9c ;
+		transition: 0.2s;
+		transform: scale(1.03);
+		cursor: pointer;
+	}
+	#star:hover{
+		background-color: yellow;
+		height: 15px;
+		transform: scale(1.3);
+		border-radius: 50%;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+	footer{
+		padding: 20px 10%;
+		display: flex;
+		background: linear-gradient(to right,rgba(76, 150, 215,0.8) 20%,rgba(187, 255, 156,0.5)), url('images/trans1.png');
+	}
+	footer div{
+		width: 45%;
+	}
+	footer div p{
+		width: 80%;
+	}
+	footer div a{
+		color: black;
+		line-height: 2em;
+	}
+	footer div a:hover{
+	    text-decoration: none;
+	}
+	#hino{
+		display: none;
+	}
+	#menu{
+		float: right;
+		margin-top: 41px;
+		background-color: transparent;
+		color: #4c96d7;
+		margin-right: 21px;
+		font-size: 18px;
+		display: none;
+	}
+	@media all and (max-width: 768px)
+    {
+    	body{
+    		font-size: 13px;
+    	}
+    	footer{ padding: 10px; display: block;} 
+		footer div{ width: 98%; margin-top: 20px; }
+    	.propage{
+    		display: block;
+    		padding: 1%;
+    		margin: 2%;
+    	}
+    	.secondflex , .firstflex {
+    		width: 100%;
+    		margin:0px 0px 4% 0px; 
+    	}
+    	.desc{
+    		width: 95%;
+    	}
+    	.related{
+			margin: 2%;
+			border: 1px solid rgba(0,0,0,0.2);
+		}
+		.samebooks{
+			width: 90%;
+			margin: 5%;
+		}
+		#bn, #ba, #bd, #bcat{
+			font-size: 14px;
+		}
+		#bcon{
+			font-size: 14px;
+		}
+		#bp{
+			font-size: 18px;
+		}
+		h2{
+			font-size: 18px;
+		}
+		.cartbutton{
+			font-size: 20px;
+		}
+		.bi{
+			width: 200px;
+		}
+		.sbi{
+			height: 280px;
+		}
+		.lo{
+			width: 150px;
+			margin-top: -25px;
+		}
+		.navbut{
+			font-size: 18px;
+		}
+		.bl{
+			overflow-x: scroll;
+
+		}
+		#hi{
+			display: none;
+		}
+		.navbut{
+			font-size: 18px;
+			float: none;
+			position: absolute;
+			text-align: center;
+			width: 90%;
+			line-height: 20px;
+			color: white;
+		}
+		#in_hino{
+			display: none;
+		}
+		#hino{
+			background-color: black;
+			padding-bottom: 0px;
+			transition: 1s;
+			height: 0px;
+			display: block;
+		}
+		#inside_aside{
+			display: none;
+		}
+		#menu{
+			display: block;
+		}
+    }

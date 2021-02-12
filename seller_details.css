@@ -1,0 +1,94 @@
+html{
+        overflow-x: hidden;
+    }
+    *{
+        margin: 0px;
+    }
+    body{
+        margin: 0px;
+        font-family: 'Poppins', sans-serif;
+        background-image: url("images/trans1.png") ,linear-gradient(to top left,#4c96d7 20%,#bbff9c);
+    }
+    button{
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+    input{
+        outline: 0px;
+        border: none;
+    }
+    .in , textarea{
+        border: none;
+        width: 85%;
+        outline: none;
+        background-color: #eee;
+        padding: 12px 15px;
+    }
+    textarea{
+        height: 80px;
+    }
+        label{
+            width: 250px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .form { 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        display: flex;
+        width: 60%;
+        background-color: white;
+        margin: 11.7vh 22%;
+    }
+    .seller_form{
+        padding: 2%;
+    }
+    #book_form_submit{
+        width: 30%;
+        background-color: #4c96d7;
+        height: 45px;
+        font-size: 18px;
+        border: none;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+        color: white;
+        outline: none;
+        margin-left: 35%;
+        border-radius: 50px;
+    }
+    @media all and (max-width: 768px)
+    {
+        body{
+            font-size: 13px;
+            background-image: url("images/trans1.png") ,linear-gradient(to top left,#4c96d7,#bbff9c);
+        }
+        .seller_form{
+            width: 100%;
+            filter: blur(0px);
+            z-index: 2;
+        }
+        h1{
+            text-align: center;
+        }
+        .form{
+            justify-content: center;
+            display: block;
+            width: 90%;
+            background-image: url("images/sellerimg.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 12vh 5%;
+        }
+        .image{
+            display: none;
+        }
+        .in , textarea{
+            background-color: rgba(238, 238, 238,0.7);
+            border: 1px solid black;
+        }
+        #book_form_submit {
+            width: 25%;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
